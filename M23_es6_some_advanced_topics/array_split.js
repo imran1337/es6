@@ -7,5 +7,5 @@ console.log("removed:",removed);
 
 console.log("mainArr:",numbers);
 
-const together = numbers.join(" amar ")
+const together = numbers.join("")
 console.log(together);
