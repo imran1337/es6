@@ -1,31 +1,41 @@
-function stopWatch() {
-  let count = 0;
-  return function () {
-    count++;
-    return count;
-  };
-}
+// const num1 = 2;
+// const num2 = 3;
 
-const clock1 = stopWatch()
-const clock2 = stopWatch()
-console.log(clock1());
-console.log(clock1());
-console.log(clock1());
-console.log(clock1());
-console.log(clock1());
-console.log(clock1());
-console.log(clock1());
-console.log(clock1());
-console.log(clock1());
-console.log('clock 2 start');
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
-console.log(clock2());
+// const sum = function () {
+//   return function () {
+//     return num1 + num2;
+//   };
+// };
+
+// const myFunc = sum()
+// console.dir(myFunc)
+
+// 2
+// function bankAccount(initialBalance) {
+//   const balance = initialBalance;
+//   return function () {
+//     return balance;
+//   }
+// }
+
+// const account = bankAccount(1000000)
+// console.log(account());
+
+// ex 3
+let num1 = 2;
+let num2 = 3;
+
+const sum = function () {
+  return function () {
+    return num1 + num2;
+  };
+};
+
+const myFunc = sum()
+console.dir(myFunc())
+
+num1 = 10;
+num2 = 20;
+
+// let myFunc = sum()
+console.dir(myFunc())
